@@ -10,7 +10,7 @@ git clone https://github.com/albertoantunes/ud036_StarterCode.git
 Or just download the zip file
 
 ## Pre-requisites
-- [Python](https://www.python.org/)
+- [Python 3](https://www.python.org/)
 
 ## Executing the project
 - Make sure python is set in your path environment
