@@ -56,6 +56,10 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+        .eyes {
+            margin-top: -470px;
+            margin-left: 330px;
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -80,7 +84,11 @@ main_page_head = '''
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
+
+          // Append the eyes image for that special movie : - )
+          $('h2:contains("Rolling")').first().after('<img src="./eyes.png" class="eyes" alt="oops">');
         });
+        //$('<img src="./eyes.png" alt="oops">').insertAfter($('h2:contains("Rolling")').first())
     </script>
 </head>
 '''
